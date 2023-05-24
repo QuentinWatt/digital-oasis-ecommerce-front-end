@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const AppFooter = () => {
   return (
-    <footer className="w-full bg-slate-900 flex items-center text-white py-6">
+    <footer className="w-full bg-slate-900 text-white py-6">
       <div className="grid gap-3 grid-cols-1 lg:grid-cols-4 container mx-auto text-sm">
         <div>
           <h5 className="font-bold text-lg">Shop</h5>
@@ -40,6 +40,10 @@ const AppFooter = () => {
             <li>Twitter</li>
           </ul>
         </div>
+      </div>
+
+      <div className="text-center w-full text-sm mt-5">
+        &copy; Copyright Digital Oasis (Pty) Ltd
       </div>
     </footer>
   );
