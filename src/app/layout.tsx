@@ -1,6 +1,6 @@
-import Link from "next/link";
-import "./globals.css";
+import "./main.css";
 import { Inter } from "next/font/google";
+import MainNavigation from "@/components/navigation/MainNavigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,19 +19,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-slate-900 text-slate-100 h-screen`}
       >
-        <nav className="w-full bg-slate-800 border-b border-slate-600 h-16 flex items-center">
-          <div className="flex justify-between container mx-auto">
-            App Name
-            <ul className="flex gap-2">
-              <li>
-                <Link href={"/"}>Home</Link>
-              </li>
-              <li>
-                <Link href={"/about"}>About</Link>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <MainNavigation />
         <main className="py-12">{children}</main>
       </body>
     </html>
