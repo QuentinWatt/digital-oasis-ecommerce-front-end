@@ -17,9 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-slate-900 min-h-screen`}>
+      <body className={`${inter.className} bg-slate-900 h-screen`}>
         <MainNavigation />
-        <main className="py-12 bg-gray-300">{children}</main>
+        <main className="py-12 bg-gray-300 min-h-96">{children}</main>
         <AppFooter />
       </body>
     </html>
