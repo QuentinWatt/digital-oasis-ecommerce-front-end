@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bold;
+  }
+}
+
+@layer components {
+  .card {
+    @apply border border-gray-300 rounded max-w-md bg-white;
+  }
+
+  .card-title {
+    @apply mb-3 font-bold;
+  }
+
+  .card-body {
+    @apply p-3;
+  }
+
+  .button {
+    @apply rounded bg-blue-500 px-3 py-2 outline-none block text-white text-center;
+  }
+
+  .button:hover .button:focus {
+    @apply bg-blue-600;
+  }
+}
