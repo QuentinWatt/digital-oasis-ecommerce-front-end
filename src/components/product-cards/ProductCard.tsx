@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import thumbnail from "./generic_thumbnail.jpg";
+import thumbnail from "../../assets/generic_thumbnail.jpg";
 
 export interface ProductCardProps {
   title: string;
@@ -20,7 +20,9 @@ const ProductCard: React.FC<ProductCardProps> = ({
         style={{
           width: "100%",
           height: "200px",
-          background: `${imageUrl}`,
+          backgroundImage: `url("${imageUrl ?? thumbnail.src}")`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
         }}
       ></div>
       <div className="card-body">
